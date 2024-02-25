@@ -1,0 +1,129 @@
+.nav {
+    width: 100%;
+    height: 100vh;
+    background: url(images/g4.JPG);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 50px; margin-bottom: 50px;
+}
+
+.gallery-container .row {
+    display: flex;
+    gap: 15px;
+}
+
+.gallery-container h1 {
+    font-size: 50px;
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+}
+
+.gallery-container .col {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media (max-width:750px) {
+    .gallery-container .row {
+        flex-direction: column;
+    }
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100vh;
+    background: #f6f2fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.gallery-img .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-img .gallery .img-bx {
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(images/g3.JPG);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+}
+
+.gallery-img .gallery .img-bx:nth-child(2) {
+    background: url(images/image1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-img .gallery .img-bx:nth-child(3) {
+    background: url(images/gg.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-img .gallery .img-bx:nth-child(4) {
+    background: url(images/gg1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-img .gallery .img-bx:nth-child(5) {
+    background: url(images/gg2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-img .gallery .img-bx h3 {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.gallery-img .gallery .img-bx:hover {
+    width: 300px;
+    cursor: pointer;
+}
+
+.gallery-img .gallery .img-bx:hover h3 {
+    opacity: 1;
+    bottom: 25px;
+}

@@ -1,0 +1,116 @@
+.nav {
+    width: 100%;
+    height: 100vh;
+    background: url(images/diningbg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  .split-screen {
+    display: flex;
+    justify-content: center;
+  }
+
+  .split-screen .beach-park,
+  .split-screen .orenco {
+    text-align: center;
+    flex-basis: 50%;
+    padding: 20px;
+  }
+
+  .beach-park {
+    background-color: #cce5ff;
+  }
+
+  .orenco {
+    background-color: #e4793bdc;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+
+  /* Style for the button */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff; /* White background color */
+    color: #fc7100; /* Orange Text color */
+    text-decoration: none; /* Remove underline */
+    border: 2px solid #fc7100; /* Add a orange border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    /* Add the transition property for a smooth color change */
+    transition: background-color 1s ease;
+  }
+
+  /* Change text color to white and background color to green when the cursor hovers over the button */
+  .button:hover {
+    background-color: #fc7100; /* Orange background color */
+    color: #fff; /* White text color */
+  }
+
+  /* Wavy text animation for both "Beach Park" and "Amco" headings */
+  @keyframes wavyText {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .beach-park h2, .orenco h2 {
+    display: inline-block;
+    animation: wavyText 2s infinite;
+  }
+
+  /* Wavy image animation for both "Beach Park" and "Amco" images */
+  @keyframes wavyImage {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .beach-park img, .orenco img {
+    animation: wavyImage 2s infinite;
+  }
+
+  /* Optional: Add some margin to the buttons for spacing */
+  .button + .button {
+    margin-left: 10px;
+  }
+
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .split-screen {
+      flex-wrap: wrap;
+    }
+    .split-screen .beach-park,
+    .split-screen .orenco {
+      flex-basis: 100%;
+      padding: 20px;
+    }
+  }
+
+  
